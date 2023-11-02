@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="purple_200">#FFBB86FC</color>
-    <color name="primary">#f52c56</color>
-    <color name="accent">#f52c56</color>
-    <color name="teal_200">#FF03DAC5</color>
-    <color name="teal_700">#FF018786</color>
-    <color name="black">#FF000000</color>
-    <color name="white">#FFFFFFFF</color>
-    <color name="g_back">#33405f</color>
-    <color name="g_gray">#E6E6E6</color>
+    <color name="purple_200">#51624F</color> <!-- Purple -->
+    <color name="primary">#E6D5A9</color> <!-- Indigo -->
+    <color name="accent">#AFBEA2</color> <!-- Pink -->
+    <color name="teal_200">#9CB4AC</color> <!-- Cyan -->
+    <color name="teal_700">#58B697</color> <!-- Teal -->
+    <color name="black">#FF000000</color> <!-- Black -->
+    <color name="white">#FFFFFFFF</color> <!-- White -->
+    <color name="g_back">#2C3E50</color> <!-- Wet Asphalt -->
+    <color name="g_gray">#BDC3C7</color> <!-- Silver -->
 </resources>
