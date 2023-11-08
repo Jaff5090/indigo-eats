@@ -5,6 +5,10 @@
         <item name="colorPrimary">@color/purple_200</item>
         <item name="colorPrimaryDark">@color/accent</item>
         <item name="colorAccent">@color/teal_200</item>
+
+        <item name="android:windowSplashScreenBackground">@color/white</item>
+        <item name="android:windowSplashScreenAnimationDuration">1000</item>
+        <item name="android:windowSplashScreenBrandingImage">@mipmap/ic_launcher</item>
         <!-- Customize your theme here. -->
     </style>
 </resources>

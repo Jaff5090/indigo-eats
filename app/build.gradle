@@ -7,8 +7,8 @@ android {
     compileSdk 33
 
     defaultConfig {
-        applicationId "com.bib.foodapplication"
-        minSdk 21
+        applicationId "com.bib.IndigoEats"
+        minSdk 31
         targetSdk 33
         versionCode 1
         versionName "1.0"
@@ -63,6 +63,7 @@ dependencies {
     implementation 'com.squareup.retrofit2:converter-gson:2.3.0'
 
     implementation 'com.github.bumptech.glide:glide:4.12.0'
+    implementation("androidx.core:core-splashscreen:1.0.0")
 
 
     def lifecycle_version = "2.4.0-rc01"
@@ -81,5 +82,7 @@ dependencies {
     kapt("androidx.room:room-compiler:$room_version")
     // optional - Kotlin Extensions and Coroutines support for Room
     implementation("androidx.room:room-ktx:$room_version")
+
+    
 
 }

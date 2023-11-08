@@ -7,9 +7,9 @@ import android.util.Log
 import android.view.View
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.GridLayoutManager
-import com.bib.metoapplication.R
 import com.bib.metoapplication.adapters.MealsByCategoryAdapter
 import com.bib.metoapplication.databinding.ActivityFilterCategoryBinding
+
 import com.bib.metoapplication.fragments.HomeFragment
 import com.bib.metoapplication.pojo.MealByCateory
 import com.bib.metoapplication.viewModel.CategoryMealsViewModel
@@ -64,16 +64,24 @@ class CategoryMealsActivity : AppCompatActivity() {
 
 
     private fun observeMealsByCategory(){
-        categoryMealMVVM.observerMealsByCategoory().observe(this,{
-                mealByCategoryList ->
-            mealsByCategoryAdapter.setMealsByCategory(mealByCategoryList as ArrayList<MealByCateory> /* = java.util.ArrayList<com.bib.metoapplication.pojo.MealByCateory> */)
-            Log.i("size Of Meel",""+mealByCategoryList.size)
+        categoryMealMVVM.observerMealsByCategoory().observe(this) { mealByCategoryList ->
+            mealsByCategoryAdapter.setMealsByCategory(
+                mealByCategoryList as ArrayList<MealByCateory> /* = java.util.ArrayList<com.bib.metoapplication.pojo.MealByCateory> */
+            )
+            Log.i(
+                "size Of Meel",
+                "" + mealByCategoryList.size
+            )
             bindViews()
-            binding.categoryNameAndAccount.text = "${categoryName} : ${mealByCategoryList.size}"
+            binding.categoryNameAndAccount.text =
+                "${categoryName} : ${mealByCategoryList.size}"
             mealByCategoryList.forEach {
-                Log.d("Meals By Category ",""+it.strMeal)
+                Log.d(
+                    "Meals By Category ",
+                    "" + it.strMeal
+                )
             }
-        })
+        }
     }
     private fun getMealsByCategory() {
         categoryMealMVVM.getMealByCategory(categoryName)
