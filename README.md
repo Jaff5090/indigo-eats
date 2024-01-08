@@ -2,7 +2,7 @@
 [![Kotlin](https://img.shields.io/badge/Kotlin-1.7.21-blue.svg)](http://kotlinlang.org)
 ![MVVM Architecture](https://img.shields.io/badge/Architecture-MVVM-brightgreen)
 
-# Food Application - A Culinary Delight
+# Food Application - indigo-eats
 
 <p align="center">
   <img src="path-to-your-app-screenshot.gif" width="250" alt="App Screenshot"/>
